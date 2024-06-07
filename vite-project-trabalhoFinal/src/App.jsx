@@ -2,14 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Rotas } from './routes/Routes'
+import { Rotas } from './routes/routes'
+import { ProdutoProvider } from './context/produtoContext'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <ProdutoProvider>
       <Rotas/>
+      </ProdutoProvider>
     </>
   )
 }

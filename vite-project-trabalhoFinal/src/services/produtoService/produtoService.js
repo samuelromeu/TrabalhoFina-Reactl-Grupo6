@@ -1,16 +1,9 @@
-const API_URL = "http://localhost:8080"
+import { api } from "../api"
 
-const getProdutos = async() => {
-    try{
-        const resposta = await fetch(`$`,{API_URL}/produtos);
-        if(!resposta.ok) {
-            throw new Error("Sem resposta")
-        }
-        return await resposta.json();
-    } catch (error){
-        console.error("Erro get", error);
-        throw error;
-    }
+export const getProdutos= ()=> {
+    const url = '/batata'
+    return api.get(url, {
+        headers:{"Access-Control-Allow-Origin*":""}
+    })
 }
 
-export {getProdutos}
