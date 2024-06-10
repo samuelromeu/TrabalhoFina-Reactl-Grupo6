@@ -10,7 +10,7 @@ import Footer from "../components/layout/Footer";
 
 export function Rotas() {
     return (
-      <div>
+      <div className="Padrao">
         <Navbar/>
         <Container customClass="min-height">
           <Routes>
