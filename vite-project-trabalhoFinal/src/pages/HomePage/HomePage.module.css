@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+.titulo {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 43px;
+    color: #F8EBDE;
+    text-shadow: 15px, 14px, 10px, #ffffff;
+    box-shadow: 12px, 4px, 10px, #ffffff;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+    padding-bottom: 2px;
+    padding-top: 10px;
+}
+
+.CardProdutos {
+    background-color: #ad805ceb;
+    margin-top: 0rem;
+}
