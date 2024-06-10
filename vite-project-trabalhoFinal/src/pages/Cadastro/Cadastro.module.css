@@ -1,0 +1,41 @@
+
+
+
+.marrom{
+
+height:600px ;
+width: 1100px;
+background-color: #ad815c;
+margin-top: 90px;
+border-radius: 20px;
+margin-left: 30px;
+
+}
+
+h1{
+ margin-bottom: 60px;
+}
+
+input{
+    width: 900px;
+    height: 37px;
+    display: flex;
+    border-radius: 15px;
+    margin-left: 90px;
+   
+}
+
+.button1{
+    width: 900px;
+    height: 37px;
+    display: flex;
+    border-radius:15px ;
+    margin-left: 90px;
+    background-color: #13990c;
+    
+}
+
+button:hover{
+    background-color: #098103;
+
+}

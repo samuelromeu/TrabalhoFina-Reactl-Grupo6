@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { postCliente } from "../../services/usarioService/usuarioService";
-
+import styles from "../Cadastro/Cadastro.module.css";
+import cadastro from "../../images/cadastro.png"
 
 export function Cadastro() {
   const navigate = useNavigate();
@@ -28,28 +29,35 @@ export function Cadastro() {
   return(
     <main>
       <div>
-        <h1>Cadastre-se</h1>
+        
+          <div className={styles.marrom}>
+
+          <h1>Cadastre-se</h1>
+        {/* <img height="200px" src={cadastro.png}></img> */}
+          
+
         <form>
-          <label> Digite seu nome:</label>
-       <input name = "nome" value={formInfo.nome} onChange={adicionar}></input>
+         
+       <input name = "nome" placeholder="Digite seu nome aqui" value={formInfo.nome} onChange={adicionar}></input>
        <br />
-       <label> Digite seu telefone:</label>
-       <input name = "telefone" value={formInfo.telefone} onChange={adicionar}></input>
+      
+       <input name = "telefone" placeholder="Digite seu telefone aqui"value={formInfo.telefone} onChange={adicionar}></input>
         <br />
-        <label> Digite seu email:</label>
-       <input name = "email" value={formInfo.email} onChange={adicionar}></input>
+     
+       <input name = "email" placeholder="Digite seu email aqui"value={formInfo.email} onChange={adicionar}></input>
         <br />
-        <label> Digite seu cpf:</label>
-       <input name = "cpf" value={formInfo.cpf} onChange={adicionar}></input>
+        
+       <input name = "cpf" placeholder="Digite seu cpf aqui" value={formInfo.cpf} onChange={adicionar}></input>
         <br />
-        <label> Digite seu cep:</label>
-       <input name = "cep" value={formInfo.cep} onChange={adicionar}></input>
+        
+       <input name = "cep" placeholder="Digite seu cep aqui"value={formInfo.cep} onChange={adicionar}></input>
         <br />
         </form>
-        <label> Digite sua senha:</label>
-       <input name = "senha" value={formInfo.senha} onChange={adicionar}></input>
+     
+       <input name = "senha" type="password" placeholder="Digite sua senha aqui" value={formInfo.senha} onChange={adicionar}></input>
         <br />
-        <button type="button" onClick={()=> criarCliente(formInfo)}>Enviar</button>
+        <button className={styles.button1} type="button" onClick={()=> criarCliente(formInfo)}>Enviar</button>
+        </div>
       </div>
     </main>
   
