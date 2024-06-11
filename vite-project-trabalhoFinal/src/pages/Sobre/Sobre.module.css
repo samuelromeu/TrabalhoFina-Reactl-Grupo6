@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+.container_titulo {
+    border: 0px;
+    margin-top: -10px;
+    height: 60px;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 14px;
+}
+
+.h1{
+    border-bottom: -10px
+}
+
+.subtitulo {
+    font-size: 36px;
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ad805cf2;
+    margin: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.container_cima {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin: 12px;
+    font-size: 20px;
+    color:black;
+}
+
+.container_baixo {
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    color: black;
+    font-size: 19px;
+}
+
+.lucastravassos {
+    max-width: 200px;
+    margin: -10px;
+    margin-bottom: 10px;;
+}
+
+.lucasvoigt {
+    max-width: 200px;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+.kamille {
+    max-width: 200px;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+.jordana {
+    max-width: 200px;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+.bruna {
+    max-width: 200px;
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+.samuel {
+    max-width: 200px;
+    margin: -10px;
+    margin-bottom: 10px;
+}

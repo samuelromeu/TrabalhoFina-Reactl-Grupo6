@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
 .cadastro{
 height:600px;
 width: 500px;
@@ -14,31 +16,37 @@ align-items: center;
 .imput {
     background-color: #F2C69B;
     color: black;
+    font-family: 'Pattaya', sans-serif;
 }
 
 .imput2 {
     background-color: #F2C69B;
     color: black;
+    font-family: 'Pattaya', sans-serif;
 }
 
 .imput3 {
     background-color: #F2C69B;
     color: black;
+    font-family: 'Pattaya', sans-serif;
 }
 
 .imput4 {
     background-color: #F2C69B;
     color: black;
+    font-family: 'Pattaya', sans-serif;
 }
 
 .imput5 {
     background-color: #F2C69B;
     color: black;
+    font-family: 'Pattaya', sans-serif;
 }
 
 .imput6 {
     background-color: #F2C69B;
     color: black;
+    font-family: 'Pattaya', sans-serif;
 }
 
 form {
@@ -68,7 +76,8 @@ input{
     border-radius:0px;
     margin-left: 90px;
     background-color: #13990c;
-    
+    font-family: 'Pattaya', sans-serif;
+    color: black;
 }
 
 button:hover{
