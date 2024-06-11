@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import style from "./loginFormulario.module.css";
+import { BotaoCad, BotaoF } from "./BotaoForm";
+import Cadastro from "../../pages/Cadastro/Cadastro";
 
 const LoginFormulario = ({ onLoginSuccess }) => {
   const [email, setEmail] = useState("");
@@ -20,23 +23,30 @@ const LoginFormulario = ({ onLoginSuccess }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+<div className = {style.login}>
+    <form className = {style.form}onSubmit={handleSubmit}>
+      <input className={style.input}
         type="email"
         placeholder="Digite seu email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-      <input
+      <input className={style.input2}
         type="password"
         placeholder="Digite sua senha"
         value={senha}
         onChange={(e) => setSenha(e.target.value)}
         required
+
       />
-      <button type="submit">Login</button>
+      <BotaoCad onclick ={() => navigate('/cadastro')} valor ={"Não tem conta? Cadastre-se"}/>
+      <BotaoF onclick={() => {handleSubmit()}} valor={"Login"}/>
+      {/* <button type="submit"> Entrar </button>
+
+      <Link to="/login">Login</Link> */}
     </form>
+    </div>
   );
 };
 

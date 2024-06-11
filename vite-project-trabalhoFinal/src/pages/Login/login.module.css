@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+.background{
+    background-color:#ad815c ;
+    margin:20px;
+    padding: 10px;
+    width: 25rem;
+    height: 25rem;
+
+}
+
+.login{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.icon {
+    margin: 20px;
+    width: 500px;
+}

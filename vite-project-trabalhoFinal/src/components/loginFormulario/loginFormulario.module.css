@@ -1,0 +1,56 @@
+
+
+.form{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+.input{
+    background-color: #F2C69B;
+    color: black;
+    margin-top:10px;
+    margin-bottom: 5px ;
+}
+.input2{
+    background-color: #F2C69B;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.botaoForm{
+    width: 6rem;
+    height:30px;
+    background-color: green;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+
+}
+
+.botaoForm:hover{
+    background-color: #098103;
+}
+
+.botaoCad{
+    width: auto;
+    height:30px;
+    background-color: transparent;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+
+}
+.botaoCad:hover{
+   text-decoration: underline ;
+   background-color: transparent;
+   
+}
+
