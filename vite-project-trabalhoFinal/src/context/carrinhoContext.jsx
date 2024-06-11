@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createContext } from "react";
 import { limparProdutos } from "../services/uteis/localstorage/localStorage";
 import { obterProdutosCarrinho, salvarProdutosCarrinho } from "../services/uteis/localstorage/localStorage";
@@ -7,9 +7,11 @@ import { obterProdutosCarrinho, salvarProdutosCarrinho } from "../services/uteis
 const cartContext = createContext();
 
 const CartProvider = (props) => {
-  const [cartItens, setCartItens] = useState([]);  //carrinho
+  const [cartItens, setCartItens] = useState(obterProdutosCarrinho());  //carrinho
   const [valorTotal, setValorTotal] = useState(0);  //valor total
   
+
+
   function adicionarItens(novoProduto) {
       const produtoExistente = cartItens.find(produto => produto.id === novoProduto.id);
       
@@ -25,7 +27,7 @@ const CartProvider = (props) => {
     } else {
       novosItens = [...cartItens, { ...novoProduto, quantidade: 1 }];
     }
-
+    calcularValorTotal();
     setCartItens(novosItens);
     salvarProdutosCarrinho(novosItens);
   }
@@ -42,6 +44,14 @@ const CartProvider = (props) => {
     salvarProdutosCarrinho(novosItens);
   }
 
+  function excluirItens(id) {
+    const novosItens = cartItens.filter(item => item.id !== id) 
+    
+    setCartItens(novosItens);
+    salvarProdutosCarrinho(novosItens);
+  }
+    
+  
   function limparCarrinho() { // a desenvolver
     setCartItens([]);
     limparProdutos();
@@ -63,6 +73,7 @@ const CartProvider = (props) => {
         removerItens,
         limparCarrinho,
         calcularValorTotal,
+        excluirItens,
         valorTotal
       }}
     >

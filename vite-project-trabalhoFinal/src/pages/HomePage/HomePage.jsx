@@ -8,7 +8,6 @@ export function HomePage() {
     const ListaProdutos= useContext(ProdutoContext);
     const {adicionarItens} = useContext(cartContext);
     const [produtos, setProdutos] = useState([]);
-//    const {adicionarItens} = useContext(cartContext);
 
 useEffect(()=>{
     setProdutos(ListaProdutos)
@@ -35,7 +34,10 @@ useEffect(()=>{
                         <p className="p-livro">Livro: {produto.nome}</p>
                         <p className="p-preco">Preço: R${produto.preco},00</p>
                         <p className="p-descricao">Descrição: {produto.descricaoProduto}</p>
-                        <button className= "b-carrinho" type="button" onClick={()=>adicionarCarrinho(produto)}>Adc. ao Carrinho</button>
+                        <button className= "b-carrinho" type="button" onClick={()=> {
+                        adicionarCarrinho(produto);
+                        alert("Você adicionou o livro: " + produto.nome + " ao carrinho!");}
+                        }>Adc. ao Carrinho</button>
                     </Cardbox>
                 ))}
             </div>
