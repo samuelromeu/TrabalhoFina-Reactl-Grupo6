@@ -50,8 +50,9 @@ export function Carrinho() {
         preco: cartItens.map(item => parseFloat(item.preco)), 
         quantidade: cartItens.map(item => item.quantidade)
         };
-        console.log(pedido);
+
         postPedido(pedido);
+        alert("Seu Pedido foi realiizado com sucesso");
         limparProdutos()
         };
         
