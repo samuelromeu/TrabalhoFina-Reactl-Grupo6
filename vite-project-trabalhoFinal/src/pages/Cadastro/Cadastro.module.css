@@ -1,15 +1,52 @@
-
-
-
-.marrom{
-
-height:600px ;
-width: 1100px;
+.cadastro{
+height:600px;
+width: 500px;
 background-color: #ad815c;
-margin-top: 90px;
-border-radius: 20px;
-margin-left: 30px;
+margin-top: 23px;
+margin-bottom: 10px;
+border-radius: 0px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+}
 
+.imput {
+    background-color: #F2C69B;
+    color: black;
+}
+
+.imput2 {
+    background-color: #F2C69B;
+    color: black;
+}
+
+.imput3 {
+    background-color: #F2C69B;
+    color: black;
+}
+
+.imput4 {
+    background-color: #F2C69B;
+    color: black;
+}
+
+.imput5 {
+    background-color: #F2C69B;
+    color: black;
+}
+
+.imput6 {
+    background-color: #F2C69B;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    margin-bottom: 35px;
 }
 
 h1{
@@ -17,19 +54,18 @@ h1{
 }
 
 input{
-    width: 900px;
+    width: 300px;
     height: 37px;
     display: flex;
-    border-radius: 15px;
+    border-radius: 0px;
     margin-left: 90px;
-   
 }
 
 .button1{
-    width: 900px;
+    width: 90px;
     height: 37px;
     display: flex;
-    border-radius:15px ;
+    border-radius:0px;
     margin-left: 90px;
     background-color: #13990c;
     
@@ -37,5 +73,9 @@ input{
 
 button:hover{
     background-color: #098103;
+}
 
+img {
+    max-width: 330px;
+    margin-top: 30px;
 }
