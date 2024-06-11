@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import LoginFormulario from './loginFormulario/LoginFormulario';
+import LoginFormulario from '../../components/loginFormulario/LoginFormulario';
 
 export function Login() {
     const navigate = useNavigate();
 
     const handleLoginSuccess = () => {
-        navigate('/carrinho');
+        navigate('/');
     };
 
     return (
