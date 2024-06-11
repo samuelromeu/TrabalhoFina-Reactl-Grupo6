@@ -34,7 +34,7 @@ useEffect(()=>{
                         <p className="p-foto"><img height="150px" src={produto.url}></img></p>
                         <p className="p-livro">Livro: {produto.nome}</p>
                         <p className="p-preco">Preço: R${produto.preco},00</p>
-                        <p className="p-descricao">Descrição: {produto.categoria.descricao}</p>
+                        <p className="p-descricao">Descrição: {produto.descricaoProduto}</p>
                         <button className= "b-carrinho" type="button" onClick={()=>adicionarCarrinho(produto)}>Adc. ao Carrinho</button>
                     </Cardbox>
                 ))}
