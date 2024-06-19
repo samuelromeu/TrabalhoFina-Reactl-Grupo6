@@ -6,3 +6,5 @@
 - Lucas Voigt - Página de Login;
 - Samuel Romeu - Página de Carrinho;
 - Jordana Araújo - Página Sobre.
+## API utilizada
+- https://github.com/JuanP1982/ProjetoFinalAPI.git
